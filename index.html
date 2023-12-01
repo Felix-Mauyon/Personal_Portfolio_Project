@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio Project</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+  
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+      <img src="images/KOBI 11.png" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </nav>
+      <div class="header-text">
+        <p>Web Designer and Developer</p>
+        <h1>Hi, I'm <span>ONYEKA OJEI</span><br>From Nigeria
+        </h1>
+    </div>
+  </div>
+    
+    <div id="about"></div>
+     <div class="container">
+       <div class="row">
+         <div class="about-col-1">
+           <img class="pix 1.jpg" src="images/pix 1.jpg" alt="KOBI">
+         </div>
+         <div class="about-col-2">
+           <h1 class="sub-title">About Me</h1>
+           <p>I am a professional web designer and developer based in Lagos, Nigeria. I have a strong background in web development and design, and I am always looking for new challenges and opportunities to learn and grow.</p>
+
+           <div class="tab-titles">
+             <p class="tab-links active link"onclick="opentab('skills')">Skills</p>
+             <p class="tab-links active link"onclick="opentab('experience')">Experience</p>
+             <p class="tab-links active link"onclick="opentab('education')">Education</p>
+           </div>
+          <div class="tab-contents active-tab" id="skills">
+             <ul>
+               <li><span>Web Development</span><br>I can create responsive and interactive websites</li>
+               <li><span>Web Design</span><br>I can create beautiful and functional websites that are responsive and user-friendly</li>
+               <li><span>Graphic Design</span><br>I can create stunning graphics and logo</li>
+             </ul>
+           </div>
+
+           <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li><span>2023</span><br>Training and development</li>
+                <li><span>2022</span><br>Training</li>
+                <li><span>2020-2022</span><br>creative visualization and design abilities</li>
+              </ul>
+            </div>
+
+           <div class="tab-contents active-tab" id="education">
+             <ul>
+               <li><span>2018</span><br>O'Levels/West African Examination Council(WAEC) Certificate<br>Ochuks Academy,Delta state</li>
+             </ul>
+           </div>
+
+           <div id="contact">
+             <div class="container"
+                 <div class="contact">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p>kobiojei@gmail.com</p>
+                   <p>+234 802 125 9228</p>
+                   <div class="social-icon">
+                     <i class="fa-brands fa-facebook"></i>
+                     <i class="fa-brands fa-twitter"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-linkedin"></i>
+                   </div>
+                 </div>
+                   
+              
+  <script src="script.js"></script>
+
+  
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+           <script>
+             var tablinks = document.getElementsByClassName("tab-links");
+             var tabcontents = document.getElementsByClassName("tab-contents");
+             function opentab(tabname){
+               for(tablink of tablinks){
+                 tablink.classList.remove("active-link");
+               }
+                for(tabcontent of tabcontents){  
+                  tabcontent.classList.remove("active-tab");
+                }
+               event.currentTarget.classList.add("active-link");
+               document.getElementById(tabname).classList.add("active-tab");
+             }
+           </script>
+
+           
+</body>
+
+</html>
